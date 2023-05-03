@@ -1,0 +1,44 @@
+.donut-form {
+  &-radios {
+    display: flex;
+    align-content: center;
+    label {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      span {
+        color: #444;
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-working {
+    font-size: 12px;
+    font-style: italic;
+    margin: 10px 0;
+  }
+  &-error {
+    font-size: 12px;
+    color: #e66262;
+  }
+}
+.animation {
+  color: #01a3a4;
+  font-family: "Patua One", sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 3s steps(50, end);
+  animation-iteration-count: 10s;
+  animation-direction: alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
